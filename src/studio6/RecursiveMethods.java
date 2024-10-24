@@ -64,7 +64,14 @@ public class RecursiveMethods {
 	public static int[] toReversed(int[] array) {
 		
 			// FIXME create a helper method that can recursively reverse the given array
+		if (array.length==0) {
 			return new int[0];
+			}
+		else {
+			int lastIndex = array.length - 1;
+			
+			return toReversed(array);
+		}
 		
 	}
 	
